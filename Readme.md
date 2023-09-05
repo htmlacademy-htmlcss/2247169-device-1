@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Olga Kosukhina](https://up.htmlacademy.ru/htmlcss-individual/1/user/2247169).
-* Наставник: `Неизвестно`.
+* Наставник: [Светлана Корякина] (https://htmlacademy.ru/profile/id477401)
 
 ---
 
