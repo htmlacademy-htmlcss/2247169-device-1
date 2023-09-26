@@ -80,19 +80,20 @@
         <div class="slider-item">
           <img class="slider-item-image" src="#" alt="Квадрокоптер">
           <div class="slider-item-text">
-            <h2 class="slider-item-title">Порхает как бабочка, жалит как пчела!</h2>
+            <h2 class="visually-hidden">Квадрокоптер</h2>
+            <p class="slider-item-title">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартнуюnкамеру.
             </p>
             <a href="#">Подробнее</a>
             <table class="slider-item-details">
-              <tr class="table-header">
-                <th>800 м</th>
-                <th>50 м</th>
-              </tr>
               <tr class="table-row">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+              <tr class="table-header">
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
               </tr>
             </table>
           </div>
@@ -101,16 +102,17 @@
         <div class="slider-item">
           <img class="slider-item-image" src="#" alt="Фитнес-браслет">
           <div class="slider-item-text">
-            <h2 class="slider-item-title">Худеем правильно!</h2>
+            <h2 class="visually-hidden">Фитнес-браслет</h2>
+            <p class="slider-item-title">Худеем правильно!</p>
             <p class="slider-item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
               занятия и соблюдать диету.</p>
             <button class="button">Подробнее</button>
             <table class="slider-item-details">
-              <tr class="table-header">
-                <th>48 часов</th>
-              </tr>
               <tr class="table-row">
-                <td>Без подзарядки</td>
+                <td>48 часов</td>
+              </tr>
+              <tr class="table-header">
+                <th>Без подзарядки</th>
               </tr>
             </table>
           </div>
@@ -119,47 +121,39 @@
         <div class="slider-item">
           <img class="slider-item-image" src="#" alt="Селфи-палка">
           <div class="slider-item-text">
-            <h2 class="slider-item-title">Делай селфи, как Бен Стиллер! </h2>
+            <h2 class="visually-hidden">Селфи-палка</h2>
+            <p class="slider-item-title">Делай селфи, как Бен Стиллер!</p>
             <p class="slider-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
               Карл!) метров длиной и весом всего 5 кг.</p>
             <button class="button">Подробнее</button>
             <table class="slider-item-details">
-              <tr class="table-header">
-                <th>8,5 м</th>
-                <th>5 кг</th>
-                <th>Карбон</th>
-              </tr>
               <tr class="table-row">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
+                <td>8,5 м</td>
+                <td>5 кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="table-header">
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
               </tr>
             </table>
           </div>
         </div>
 
-        <button class="slider-button slider-prev" type="button">
-          <span class="visually-hidden">Предыдущее фото</span>
-        </button>
-        <button class="slider-button slider-next" type="button">
-          <span class="visually-hidden">Следующее фото</span>
-        </button>
+        <button class="slider-button slider-prev" type="button" aria-label="Предыдущее фото"></button>
+        <button class="slider-button slider-next" type="button" aria-label="Следующее фото"></button>
 
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button slider-pagination-button-current" type="button">
-              <span class="visually-hidden">1 фото</span>
-            </button>
+            <button class="slider-pagination-button slider-pagination-button-current" type="button"
+              aria-label="Первое фото"></button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">2 фото</span>
-            </button>
+            <button class="slider-pagination-button" type="button" aria-label="Второе фото"></button>
           </li>
           <li class="slider-pagination-item">
-            <button class="slider-pagination-button" type="button">
-              <span class="visually-hidden">3 фото</span>
-            </button>
+            <button class="slider-pagination-button" type="button" aria-label="Третье фото"></button>
           </li>
         </ol>
       </div>
@@ -170,37 +164,37 @@
           <li class="categories-item">
             <a href="#">
               <img src="#" alt="Виртуальная реальность">
-              <p>Виртуальная реальность</p>
+              <h3>Виртуальная реальность</h3>
             </a>
           </li>
           <li class="categories-item">
             <a href="#">
               <img src="#" alt="Моноподы для селфи">
-              <p>Моноподы для селфи</p>
+              <h3>Моноподы для селфи</h3>
             </a>
           </li>
           <li class="categories-item">
             <a href="#">
               <img src="#" alt="Экшн-камеры">
-              <p>Экшн-камеры</p>
+              <h3>Экшн-камеры</h3>
             </a>
           </li>
           <li class="categories-item">
             <a href="#">
               <img src="#" alt="Фитнес-браслеты">
-              <p>Фитнес-браслеты</p>
+              <h3>Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="categories-item">
             <a href="#">
               <img src="#" alt="Умные часы">
-              <p>Умные часы</p>
+              <h3>Умные часы</h3>
             </a>
           </li>
           <li class="categories-item">
             <a href="#">
               <img src="#" alt="Квадракоптеры">
-              <p>Квадракоптеры</p>
+              <h3>Квадракоптеры</h3>
             </a>
           </li>
         </ul>
@@ -274,8 +268,8 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" name="user-email" placeholder="Ваш e-mail">
           <button class="subscription-button" type="submit">Подписаться</button>
-          <span>Это бесплатно</span>
         </form>
+        <span>Это бесплатно</span>
       </section>
     </main>
 
@@ -284,14 +278,14 @@
         <img class="footer-logo-image" src="#" alt="Логотип магазина «Девайс».">
       </a>
 
-      <section class="footer-address">
+      <div class="footer-address">
         <h2 class="visually-hidden">Адрес магазина</h2>
         <address class="footer-address-text">
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
         </address>
-      </section>
+      </div>
 
-      <section class="footer-details">
+      <div class="footer-details">
         <h2 class="visually-hidden">Детали о доставке, гарантии и контактах магазина</h2>
         <ul class="footer-menu-list">
           <li class="footer-menu-item">
@@ -307,28 +301,22 @@
 
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Telegram</span>
-            </a>
+            <a href="https://t.me/htmlacademy" aria-label="Telegram"></a>
           </li>
           <li class="footer-social-item">
-            <a href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">YouTube</span>
-            </a>
+            <a href="https://www.youtube.com/user/htmlacademyru" aria-label="YouTube"></a>
           </li>
           <li class="footer-social-item">
-            <a href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
+            <a href="https://twitter.com/htmlacademy_ru" aria-label="Twitter"></a>
           </li>
         </ul>
-      </section>
+      </div>
 
-      <section class="footer-phone">
+      <div class="footer-phone">
         <h2 class="visually-hidden">Телефон магазина</h2>
         <a class="footer-phone-text" href="tel:78128121212">+7 (812) 812-12-12</a>
         <a href="https://htmlacademy.ru/"></a>
-      </section>
+      </div>
     </footer>
   </body>
 
