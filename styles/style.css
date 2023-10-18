@@ -1,0 +1,463 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/raleway-800.woff2") format(woff2);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/rubik/rubik-400.woff2") format(woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/rubik/rubik-700.woff2") format(woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Index */
+/* Header */
+
+.page-header {
+    color: #000000;
+    background-color: #ffe17f;
+    ;
+}
+
+.header-search input {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.header-search button {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.user-menu a {
+    font-family: "Rubik", sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.navigation a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 800;
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+}
+
+.navigation-catalog a {
+    font-family: "Rubik", sans-serif;
+    text-transform: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: normal;
+}
+
+/* Main */
+/* Hero block */
+.slider-item-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.slider-item-description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+}
+
+.slider-item-text a {
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.table-row {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+}
+
+.table-header {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #444444;
+}
+
+/* Categories */
+.categories-item a {
+    color: #000000;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.categories-item img {
+    background-color: #ffe17f;
+}
+
+/* Capabilities */
+.capabilities {
+    background-color: #f0f0f0;
+}
+
+.capabilities-button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.capabilities-content h3 {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.capabilities-content p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+/* Delivery button */
+.delivery-button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23.48px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.delivery-button img {
+    background-color: #ffe17f;
+}
+
+/* Shop information */
+.shop-information-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.shop-information p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.shop-information-delivery {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    list-style-type: circle;
+    letter-spacing: -0.02em;
+}
+
+.shop-information-details {
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Contacts */
+.contacts-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.contacts-subtitle {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #444444;
+}
+
+.contacts p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.contacts-address-text {
+    font-style: normal;
+}
+
+.contacts-phone {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-style: normal;
+    text-decoration-line: underline;
+}
+
+.contacts-schedule {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.contacts-details {
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Subscription */
+.subscription {
+    background-color: #f0f0f0;
+}
+
+.subscription-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.subscription p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.subscription-placeholder {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.subscription-button {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subscription span {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+/* Footer */
+.page-footer {
+    background-color: #444444;
+}
+
+.footer-address-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+.footer-menu-link {
+    color: #ffffff;
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.footer-phone-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    text-decoration-line: underline;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+}
+
+/* Catalog */
+.inner-header-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.breadcrumbs {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.breadcrumbs a {
+    color: #000000;
+}
+
+.catalog-products {
+    background-color: #f0f0f0;
+}
+
+.catalog-products-subtitle {
+    font-size: 16px;
+    line-height: 18.78px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.catalog-filter-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.catalog-filter-label {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.range-input[value] {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.control {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.select-control {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.catalog-filter-button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Product list */
+.product-list {
+    background-color: #ffffff;
+}
+
+.product-card a {
+    color: #000000;
+}
+
+.product-card-title {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+}
+
+.product-card-price {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 21.33px;
+    text-align: right;
+}
+
+.product-list-button {
+    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18.78px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pagination {
+    background-color: #ebebeb;
+}
+
+.pagination-prev,
+.pagination-show-more {
+    line-height: 21.13px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.pagination-disabled {
+    color: #444444;
+}
+
+.pagination-current {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #444444;
+    text-align: center;
+}

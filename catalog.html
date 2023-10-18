@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог магазина «Девайс»</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                     </clipPath>
                 </defs>
             </svg>
-            <input type="search" name="menu-search" placeholder="Поиск по сайту">
+            <input type="search" name="menu-search" placeholder="Текст поиска">
             <button type="submit">Найти</button>
         </form>
 
@@ -100,7 +101,7 @@
                             </defs>
                         </svg>
                     </button>
-                    <ul>
+                    <ul class="navigation-catalog">
                         <li class="navigation-item">
                             <a class="navigation-link" href="#">Виртуальная реальность</a>
                         </li>
@@ -237,7 +238,7 @@
                         </ul>
                     </fieldset>
 
-                    <button class="button" type="submit">Показать</button>
+                    <button class="catalog-filter-button" type="submit">Показать</button>
                 </form>
 
                 <h3 class="catalog-products-subtitle">Сортировка:</h3>
@@ -280,9 +281,8 @@
                             <b class="product-card-price">1 500 ₽</b>
                         </a>
                     </li>
+                    <button class="product-list-button" type="button">Загрузить еще</button>
                 </ul>
-
-                <button class="product-list-button" type="button">Загрузить еще</button>
 
                 <ul class="pagination">
                     <li class="pagination-item">

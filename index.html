@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=s, initial-scale=1.0">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -97,7 +98,7 @@
               </defs>
             </svg>
           </button>
-          <ul>
+          <ul class="navigation-catalog">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Виртуальная реальность</a>
             </li>
@@ -141,7 +142,7 @@
           <h2 class="visually-hidden">Квадрокоптер</h2>
           <p class="slider-item-title">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартнуюnкамеру.
+            замаскированным под стандартную камеру.
           </p>
           <a href="#">Подробнее</a>
           <table class="slider-item-details">
@@ -150,8 +151,8 @@
               <td>50 м</td>
             </tr>
             <tr class="table-header">
-              <th>Дальность полета</th>
-              <th>Радиус поражения</th>
+              <td>Дальность полета</td>
+              <td>Радиус поражения</td>
             </tr>
           </table>
         </div>
@@ -171,7 +172,7 @@
               <td>48 часов</td>
             </tr>
             <tr class="table-header">
-              <th>Без подзарядки</th>
+              <td>Без подзарядки</td>
             </tr>
           </table>
         </div>
@@ -193,9 +194,9 @@
               <td>Карбон</td>
             </tr>
             <tr class="table-header">
-              <th>Длина палки</th>
-              <th>Вес палки</th>
-              <th>Материал</th>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
             </tr>
           </table>
         </div>
@@ -337,7 +338,7 @@
       <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
         спецпредложения и вот это вот всё.</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="user-email" placeholder="Ваш e-mail">
+        <input class="subscription-placeholder" type="email" name="user-email" placeholder="Ваш e-mail">
         <button class="subscription-button" type="submit">Подписаться</button>
       </form>
       <span>Это бесплатно</span>
