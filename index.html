@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <meta name="viewport"  content="width=device-width, initial-scale=1">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -27,8 +28,8 @@
           </clipPath>
         </defs>
       </svg>
-      <input type="search" name="menu-search" placeholder="Поиск по сайту">
-      <button type="submit">Найти</button>
+      <input class="search-field" type="search" name="menu-search" placeholder="Поиск по сайту">
+      <button class="search-button" type="submit">Найти</button>
     </form>
 
     <nav class="user-menu">
@@ -83,7 +84,7 @@
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Каталог товаров</a>
+          <a class="navigation-category-link" href="#">Каталог товаров</a>
           <button class="navigation-item-button" type="button" aria-label="Каталог товаров">
             <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
@@ -97,35 +98,35 @@
               </defs>
             </svg>
           </button>
-          <ul>
+          <ul class="navigation-catalog">
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Виртуальная реальность</a>
+              <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Моноподы для cелфи</a>
+              <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Экшн-камеры</a>
+              <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Фитнес-браслеты</a>
+              <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Умные часы</a>
+              <a class="navigation-catalog-link" href="#">Умные часы</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Квадрокоптеры</a>
+              <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка</a>
+          <a class="navigation-category-link" href="#">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Гарантия</a>
+          <a class="navigation-category-link" href="#">Гарантия</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Контакты</a>
+          <a class="navigation-category-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -141,9 +142,9 @@
           <h2 class="visually-hidden">Квадрокоптер</h2>
           <p class="slider-item-title">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартнуюnкамеру.
+            замаскированным под стандартную камеру.
           </p>
-          <a href="#">Подробнее</a>
+          <a class="slider-item-link" href="#">Подробнее</a>
           <table class="slider-item-details">
             <tr class="table-row">
               <td>800 м</td>
@@ -165,7 +166,7 @@
           <p class="slider-item-title">Худеем правильно!</p>
           <p class="slider-item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
             занятия и соблюдать диету.</p>
-          <a href="#">Подробнее</a>
+          <a class="slider-item-link" href="#">Подробнее</a>
           <table class="slider-item-details">
             <tr class="table-row">
               <td>48 часов</td>
@@ -185,7 +186,7 @@
           <p class="slider-item-title">Делай селфи, как Бен Стиллер!</p>
           <p class="slider-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
             Карл!) метров длиной и весом всего 5 кг.</p>
-          <a href="#">Подробнее</a>
+          <a class="slider-item-link" href="#">Подробнее</a>
           <table class="slider-item-details">
             <tr class="table-row">
               <td>8,5 м</td>
@@ -231,38 +232,38 @@
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories-list">
         <li class="categories-item">
-          <a href="#">
+          <a class="categories-item-link" href="#">
             <img src="images/categories/category-item-vurtual-reality.svg" width="160" height="160"
               alt="Виртуальная реальность">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a href="#">
+          <a class="categories-item-link" href="#">
             <img src="images/categories/category-item-selfie.svg" width="160" height="160" alt="Моноподы для селфи">
             <h3>Моноподы для селфи</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a href="#">
+          <a class="categories-item-link" href="#">
             <img src="images/categories/category-item-cameras.svg" width="160" height="160" alt="Экшн-камеры">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a href="#">
+          <a class="categories-item-link" href="#">
             <img src="images/categories/category-item-bracelets.svg" width="160" height="160" alt="Фитнес-браслеты">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a href="#">
+          <a class="categories-item-link" href="#">
             <img src="images/categories/category-item-watch.svg" width="160" height="160" alt="Умные часы">
             <h3>Умные часы</h3>
           </a>
         </li>
         <li class="categories-item">
-          <a href="#">
+          <a class="categories-item-link" href="#">
             <img src="images/categories/category-item-quadcopter.svg" width="160" height="160" alt="Квадракоптеры">
             <h3>Квадракоптеры</h3>
           </a>
@@ -279,22 +280,22 @@
       </div>
       <div class="capabilities-content-container">
         <div class="capabilities-content active" id="delivery">
-          <h3>Доставка</h3>
-          <p>Мы с удовольствием доставим ваш товар прямо
+          <h3 class="capabilities-content-title">Доставка</h3>
+          <p class="capabilities-content-subtitle">Мы с удовольствием доставим ваш товар прямо
             к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
           <img src="images/capabilities/delivery.svg" width="136" height="164" alt="Доставка товара">
         </div>
         <div class="capabilities-content" id="guarantee">
-          <h3>Гарантия</h3>
-          <p>Если из-за возгорания купленного у нас товара у вас
+          <h3 class="capabilities-content-title">Гарантия</h3>
+          <p class="capabilities-content-subtitle">Если из-за возгорания купленного у нас товара у вас
             сгорит дом — не переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
           <img src="images/capabilities/guarantee.svg" width="171" height="195" alt="Гарантия на товары">
         </div>
         <div class="capabilities-content" id="credit">
-          <h3>Кредит</h3>
-          <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
+          <h3 class="capabilities-content-title">Кредит</h3>
+          <p class="capabilities-content-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия
             кредита. Выгодные для банка, разумеется.</p>
           <img src="images/capabilities/credit.svg" width="158" height="188" alt="Кредит на товары">
         </div>
@@ -337,7 +338,7 @@
       <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
         спецпредложения и вот это вот всё.</p>
       <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input type="email" name="user-email" placeholder="Ваш e-mail">
+        <input class="subscription-placeholder" type="email" name="user-email" placeholder="Ваш e-mail">
         <button class="subscription-button" type="submit">Подписаться</button>
       </form>
       <span>Это бесплатно</span>
