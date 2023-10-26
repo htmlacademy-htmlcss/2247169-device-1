@@ -11,11 +11,13 @@
 <body>
 
   <header class="page-header container">
-      <a class="page-logo-link" href="index.html">
-        <img class="page-logo-image" src="images/page-logo.svg" width="145" height="36"
-          alt="Логотип магазина «Девайс».">
-      </a>
-
+      <div class="page-logo-container">
+        <a class="page-logo-link" href="index.html">
+          <img class="page-logo-image" src="images/page-logo.svg" width="145" height="36"
+            alt="Логотип магазина «Девайс».">
+        </a>
+      </div>
+      
       <div class="header-container">
         <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,8 +310,10 @@
       </div>
     </section>
 
-    <button class="delivery-button container" type="button"><img src="images/delivery-button.svg" width="47" height="31"
+    <div class="delivery-button-wrapper container">
+      <button class="delivery-button" type="button"><img src="images/delivery-button.svg" width="47" height="31"
         alt="Кнопка доставки">Доставим редкий товар под заказ</button>
+    </div>
 
     <div class="information-wrapper container">
       <section class="shop-information">

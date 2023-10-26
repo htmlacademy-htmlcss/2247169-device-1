@@ -50,9 +50,12 @@ body {
     background-color: #ffe17f;
 }
 
-.page-logo-link {
-    display: block;
+.page-logo-container {
     padding-left: 60px;
+}
+
+.page-logo-link {
+    display: inline-block;
 }
 
 .header-wrapper {
@@ -166,7 +169,8 @@ body {
 /* Categories */
 .categories-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -216,6 +220,7 @@ body {
 
 /* Delivery button */
 .delivery-button {
+    width: 1160px;
     display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
