@@ -22,11 +22,24 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #000000;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1160px;
 }
 
 /* Index */
@@ -35,6 +48,24 @@ body {
 .page-header {
     color: #000000;
     background-color: #ffe17f;
+}
+
+.page-logo-container {
+    padding-left: 60px;
+}
+
+.page-logo-link {
+    display: inline-block;
+}
+
+.header-wrapper {
+    width: 1040px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    padding: 0 60px;
 }
 
 .search-field {
@@ -52,6 +83,8 @@ body {
 }
 
 .user-menu-list {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -60,7 +93,13 @@ body {
     color: #000000;
 }
 
+.navigation {
+    padding: 0 60px;
+}
+
 .navigation-list {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -87,6 +126,10 @@ body {
 
 /* Main */
 /* Hero block */
+.main-container {
+    flex-grow: 1;
+}
+
 .slider-item-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -125,7 +168,16 @@ body {
 
 /* Categories */
 .categories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
     list-style-type: none;
+}
+
+.categories-item {
+    width: 160px;
 }
 
 .categories-item-link {
@@ -168,6 +220,8 @@ body {
 
 /* Delivery button */
 .delivery-button {
+    width: 100%;
+    display: block;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 20px;
@@ -183,6 +237,16 @@ body {
 }
 
 /* Shop information */
+.information-wrapper {
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-information {
+    width: 520px;
+}
+
 .shop-information-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -210,6 +274,10 @@ body {
 }
 
 /* Contacts */
+.contacts {
+    width: 532px;
+}
+
 .contacts-title {
     font-family: "Raleway", sans-serif;
     font-size: 50px;
@@ -291,6 +359,23 @@ body {
     background-color: #444444;
 }
 
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    width: 234px;
+}
+
+.footer-details {
+    width: 444px;
+}
+
+.footer-phone {
+    width: 175px;
+}
+
 .footer-address-text {
     font-style: normal;
     font-size: 16px;
@@ -299,11 +384,20 @@ body {
 }
 
 .footer-menu-list {
+    display: flex;
+    justify-content: space-between;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-menu-link {
@@ -324,12 +418,19 @@ body {
 }
 
 /* Catalog */
+.inner-header {
+    width: 1080px;
+    margin: 0 auto;
+}
+
 .inner-header-title {
     font-size: 50px;
     line-height: 50px;
 }
 
 .breadcrumbs {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
     font-size: 16px;
     line-height: 20px;
@@ -342,6 +443,12 @@ body {
 
 .catalog-products {
     background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog-products-wrapper {
+    display: flex;
 }
 
 .catalog-products-subtitle {
@@ -349,6 +456,10 @@ body {
     line-height: 18.78px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+}
+
+.filter-wrapper {
+    width: 320px;
 }
 
 .catalog-filter-title {
@@ -365,6 +476,8 @@ body {
 }
 
 .catalog-filter-list {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
 
@@ -397,6 +510,9 @@ body {
 
 /* Product list */
 .product-list {
+    width: 840px;
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
     list-style-type: none;
 }
@@ -419,6 +535,7 @@ body {
 }
 
 .product-list-button {
+    width: 760px;
     background-color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -430,6 +547,9 @@ body {
 }
 
 .pagination {
+    width: 760px;
+    margin: 0;
+    padding: 0;
     background-color: #ebebeb;
     list-style-type: none;
 }
