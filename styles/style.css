@@ -130,7 +130,6 @@ body {
 
 .user-menu {
     width: 497px;
-    display: flex;
     flex-wrap: wrap;
 }
 
