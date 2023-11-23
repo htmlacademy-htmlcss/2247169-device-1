@@ -129,8 +129,8 @@ body {
 }
 
 .user-menu {
+    display: flex;
     width: 497px;
-    flex-wrap: wrap;
 }
 
 .user-menu-list {
@@ -264,8 +264,8 @@ body {
 }
 
 .categories-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 160px);
     gap: 40px;
     margin: 0;
     padding: 0;
@@ -364,7 +364,8 @@ body {
 
 .delivery-button {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 125px 1fr 125px;
     padding: 40px 0;
     align-items: center;
     justify-content: center;
@@ -674,10 +675,11 @@ body {
     background-color: #f0f0f0;
     display: flex;
     justify-content: space-between;
-}
+} 
 
 .catalog-products-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-columns: 320px 840px;
 }
 
 .catalog-products-subtitle {
@@ -768,6 +770,10 @@ body {
 
 .product-card {
     max-width: 360px;
+    display: grid;
+    grid-template-columns: 226px 134px;
+    grid-template-areas: "image image"
+                         "description price";
 }
 
 .product-card a {
@@ -775,24 +781,31 @@ body {
     text-decoration: none;
 }
 
-.product-card-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.product-card-image {
+    padding-bottom: 32px;
+    grid-area: image;
 }
 
-.product-card-title {
+.product-text-link {
+    grid-area: description;
+}
+
+.product-card-title { 
     display: block;
     max-width: 226px;
+    margin: 0;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    white-space: break-spaces;
 }
 
 .product-card-price {
     font-weight: 400;
     line-height: 21.33px;
-    text-align: right;
+    grid-area: price;
+    justify-self: end;
+    align-self: start;
 }
 
 .product-list-button {
