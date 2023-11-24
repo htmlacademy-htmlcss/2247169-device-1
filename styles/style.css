@@ -37,6 +37,12 @@ body {
     color: #000000;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -129,8 +135,8 @@ body {
 }
 
 .user-menu {
+    display: flex;
     width: 497px;
-    flex-wrap: wrap;
 }
 
 .user-menu-list {
@@ -264,8 +270,8 @@ body {
 }
 
 .categories-list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 160px);
     gap: 40px;
     margin: 0;
     padding: 0;
@@ -364,8 +370,10 @@ body {
 
 .delivery-button {
     width: 100%;
-    display: flex;
-    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 125px 1fr 125px;
+    padding: 0;
+    min-height: 100px;
     align-items: center;
     justify-content: center;
     font-family: "Raleway", sans-serif;
@@ -378,13 +386,13 @@ body {
     background-color: #f0f0f0;
 }
 
-/* .delivery-button img {
-    background-color: #ffe17f;
-} */
-
 .delivery-button::before {
-    content: url(../images/delivery-button.svg);
     background-color: #ffe17f;
+    height: 100%;
+    content: "";
+    background-image: url(../images/delivery-button.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Shop information */
@@ -677,7 +685,9 @@ body {
 }
 
 .catalog-products-wrapper {
-    display: flex;
+    display: grid;
+    grid-template-areas: "filter sorting"
+        "filter catalog";
 }
 
 .catalog-products-subtitle {
@@ -690,6 +700,7 @@ body {
 }
 
 .filter-wrapper {
+    grid-area: filter;
     width: 320px;
 }
 
@@ -725,6 +736,7 @@ body {
 }
 
 .sorting-container {
+    grid-area: sorting;
     display: flex;
     gap: 206px;
 }
@@ -746,6 +758,7 @@ body {
 
 /* Product list */
 .product-container {
+    grid-area: catalog;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -768,6 +781,10 @@ body {
 
 .product-card {
     max-width: 360px;
+    display: grid;
+    grid-template-columns: 226px 134px;
+    grid-template-areas: "image image"
+        "description price";
 }
 
 .product-card a {
@@ -775,24 +792,31 @@ body {
     text-decoration: none;
 }
 
-.product-card-text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.product-card-link {
+    padding-bottom: 32px;
+    grid-area: image;
+}
+
+.product-text-link {
+    grid-area: description;
 }
 
 .product-card-title {
     display: block;
     max-width: 226px;
+    margin: 0;
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    white-space: break-spaces;
 }
 
 .product-card-price {
     font-weight: 400;
     line-height: 21.33px;
-    text-align: right;
+    grid-area: price;
+    justify-self: end;
+    align-self: start;
 }
 
 .product-list-button {
