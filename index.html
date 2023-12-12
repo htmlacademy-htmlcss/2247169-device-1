@@ -20,10 +20,12 @@
 
     <div class="header-container">
       <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
-        <div class="search-field-div">
+        <div class="search-field-wrapper">
           <input class="search-field" type="search" name="menu-search" placeholder="Поиск по сайту">
         </div>
-        <button class="search-button" type="submit">Найти</button>
+        <div class="search-button-wrapper">
+          <button class="search-button" type="submit">Найти</button>
+        </div>
       </form>
 
       <nav class="user-menu">
@@ -83,36 +85,23 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-category-link" href="#">Каталог товаров</a>
-          <button class="navigation-item-button" type="button" aria-label="Каталог товаров">
-            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
-              <g opacity="0.3" clip-path="url(#clip0_48539_978)">
-                <path d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black" />
-              </g>
-              <defs>
-                <clipPath id="clip0_48539_978">
-                  <rect width="16" height="16" fill="white" transform="translate(17 17)" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
-          <ul class="navigation-catalog visually-hidden">
-            <li class="navigation-item">
+          <ul class="navigation-catalog">
+            <li class="navigation-catalog-item">
               <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-catalog-item">
               <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-catalog-item">
               <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
+            <li class="navigation-catalog-item">
+              <a class="navigation-catalog-link navigation-link-current" href="#">Фитнес-браслеты</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-catalog-item">
               <a class="navigation-catalog-link" href="#">Умные часы</a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-catalog-item">
               <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
             </li>
           </ul>
@@ -121,7 +110,7 @@
           <a class="navigation-category-link" href="#">Доставка</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-category-link" href="#">Гарантия</a>
+          <a class="navigation-category-link  navigation-link-current" href="#">Гарантия</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-category-link" href="#">Контакты</a>
@@ -133,7 +122,7 @@
   <main class="main-container main-index">
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <section class="hero-block container">
-      <div class="slider-item">
+      <div class="slider-item active">
         <img class="slider-item-image" src="images/slider/slider-quadcopter.png" width="560" height="560"
           alt="Квадрокоптер">
         <div class="slider-item-text" data-value="01">
@@ -142,7 +131,7 @@
           <p class="slider-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.
           </p>
-          <a class="slider-item-link" href="#">Подробнее</a>
+          <a class="button slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-details">
             <dt class="table-header">Дальность полета</dt>
             <dd class="table-row">800 м</dd>
@@ -152,7 +141,7 @@
         </div>
       </div>
 
-      <div class="slider-item visually-hidden">
+      <div class="slider-item">
         <img class="slider-item-image" src="images/slider/slider-fitness-bracelet.png" width="560" height="560"
           alt="Фитнес-браслет">
         <div class="slider-item-text" data-value="02">
@@ -160,7 +149,7 @@
           <p class="slider-item-title">Худеем правильно!</p>
           <p class="slider-item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
             занятия и соблюдать диету.</p>
-          <a class="slider-item-link" href="#">Подробнее</a>
+          <a class="button slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-details">
             <dt class="table-header">Без подзарядки</dt>
             <dd class="table-row">48 часов</dd>
@@ -168,7 +157,7 @@
         </div>
       </div>
 
-      <div class="slider-item visually-hidden">
+      <div class="slider-item">
         <img class="slider-item-image" src="images/slider/slider-selfie-stick.png" width="560" height="560"
           alt="Селфи-палка">
         <div class="slider-item-text" data-value="03">
@@ -176,7 +165,7 @@
           <p class="slider-item-title">Делай селфи, как Бен Стиллер!</p>
           <p class="slider-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
             Карл!) метров длиной и весом всего 5 кг.</p>
-          <a class="slider-item-link" href="#">Подробнее</a>
+          <a class="button slider-item-link" href="#">Подробнее</a>
           <dl class="slider-item-details">
             <dt class="table-header">Длина палки</dt>
             <dd class="table-row">8,5 м</dd>
@@ -202,11 +191,11 @@
 
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button"
-            aria-label="Первое фото"></button>
+          <button class="slider-pagination-button" type="button" aria-label="Первое фото"></button>
         </li>
         <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current" type="button" aria-label="Второе фото"></button>
+          <button class="slider-pagination-button slider-pagination-button-current" type="button"
+            aria-label="Второе фото"></button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button" aria-label="Третье фото"></button>
@@ -273,13 +262,13 @@
       <h2 class="visually-hidden">Возможности</h2>
       <div class="capabilities-wrapper container">
         <div class="capabilities-buttons-container">
-          <button class="capabilities-button active" data-id="delivery">Доставка</button>
-          <button class="capabilities-button" data-id="guarantee">Гарантия</button>
-          <button class="capabilities-button" data-id="credit">Кредит</button>
+          <button class="button capabilities-button active" data-id="delivery">Доставка</button>
+          <button class="button capabilities-button" data-id="guarantee">Гарантия</button>
+          <button class=" button capabilities-button" data-id="credit">Кредит</button>
         </div>
         <div class="capabilities-content-container">
           <div class="capabilities-content active" id="delivery">
-            <div class="apabilities-content-text">
+            <div class="capabilities-content-text">
               <h3 class="capabilities-content-title">Доставка</h3>
               <p class="capabilities-content-subtitle">Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно! Ведь
@@ -287,8 +276,8 @@
             </div>
             <img src="images/capabilities/delivery.svg" width="136" height="164" alt="Доставка товара">
           </div>
-          <div class="capabilities-content visually-hidden" id="guarantee">
-            <div class="apabilities-content-text">
+          <div class="capabilities-content" id="guarantee">
+            <div class="capabilities-content-text">
               <h3 class="capabilities-content-title">Гарантия</h3>
               <p class="capabilities-content-subtitle">Если из-за возгорания купленного у нас товара у вас
                 сгорит дом — не переживайте, мы выдадим вам новый.
@@ -296,8 +285,8 @@
             </div>
             <img src="images/capabilities/guarantee.svg" width="171" height="195" alt="Гарантия на товары">
           </div>
-          <div class="capabilities-content visually-hidden" id="credit">
-            <div class="apabilities-content-text">
+          <div class="capabilities-content" id="credit">
+            <div class="capabilities-content-text">
               <h3 class="capabilities-content-title">Кредит</h3>
               <p class="capabilities-content-subtitle">Залезть в долговую яму стало проще! Кредитные консультанты
                 подберут
@@ -324,7 +313,7 @@
           <li>СДИК</li>
           <li>ТоксБерри</li>
         </ul>
-        <a class="shop-information-details" href="#">Подробнее о нас</a>
+        <a class="button shop-information-details" href="#">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -340,7 +329,7 @@
           <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="contacts-details" href="#">Напишите нам</a>
+        <a class="button contacts-details" href="#">Напишите нам</a>
       </section>
     </div>
 
@@ -441,8 +430,8 @@
       <div class="footer-phone">
         <a class="footer-phone-text" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
         <a class="footer-phone-logo" href="https://htmlacademy.ru/">
-          <svg xmlns="http://www.w3.org/2000/svg" width="115" height="33" fill="none">
-            <path fill="#FFC700"
+          <svg xmlns="http://www.w3.org/2000/svg" width="115" height="33" fill="CurrentColor">
+            <path
               d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />
           </svg>
         </a>

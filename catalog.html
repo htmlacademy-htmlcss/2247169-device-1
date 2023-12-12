@@ -19,10 +19,12 @@
 
         <div class="header-container">
             <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
-                <div class="search-field-div">
+                <div class="search-field-wrapper">
                     <input class="search-field" type="search" name="menu-search" placeholder="Текст поиска">
                 </div>
-                <button class="search-button" type="submit">Найти</button>
+                <div class="search-button-wrapper">
+                    <button class="search-button" type="submit">Найти</button>
+                </div>
             </form>
 
             <nav class="user-menu">
@@ -88,36 +90,23 @@
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-category-link" href="#">Каталог товаров</a>
-                    <button class="navigation-item-button" type="button" aria-label="Каталог товаров">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle opacity="0.3" cx="25" cy="25" r="24" stroke="black" stroke-width="2" />
-                            <g opacity="0.3" clip-path="url(#clip0_48539_978)">
-                                <path d="M33 24H26V17H24V24H17V26H24V33H26V26H33V24Z" fill="black" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_48539_978">
-                                    <rect width="16" height="16" fill="white" transform="translate(17 17)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </button>
                     <ul class="navigation-catalog visually-hidden">
-                        <li class="navigation-item">
+                        <li class="navigation-catalog-item">
                             <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
                         </li>
-                        <li class="navigation-item">
+                        <li class="navigation-catalog-item">
                             <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
                         </li>
-                        <li class="navigation-item">
+                        <li class="navigation-catalog-item">
                             <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
                         </li>
-                        <li class="navigation-item">
+                        <li class="navigation-catalog-item">
                             <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
                         </li>
-                        <li class="navigation-item">
+                        <li class="navigation-catalog-item">
                             <a class="navigation-catalog-link" href="#">Умные часы</a>
                         </li>
-                        <li class="navigation-item">
+                        <li class="navigation-catalog-item">
                             <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
                         </li>
                     </ul>
@@ -129,7 +118,7 @@
                     <a class="navigation-category-link" href="#">Гарантия</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-category-link" href="#">Контакты</a>
+                    <a class="navigation-category-link navigation-link-current" href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -252,7 +241,7 @@
                                 </ul>
                             </fieldset>
 
-                            <button class="catalog-filter-button" type="submit">Показать</button>
+                            <button class="button catalog-filter-button" type="submit">Показать</button>
                         </form>
                     </div>
 
@@ -281,7 +270,7 @@
 
                     <div class="product-container">
                         <ul class="product-list">
-                            <li class="product-card">
+                            <li class="product-card product-card-new">
                                 <a class="product-card-link" href="#">
                                     <img class="product-card-image" src="images/catalog/product-1.jpg" width="360"
                                         height="380" alt="Любительская селфи-палка">
@@ -290,19 +279,11 @@
                                     <h3 class="product-card-title">Любительская селфи-палка</h3>
                                 </a>
                                 <b class="product-card-price">500 ₽</b>
-                                <a class="product-card-button" href="#">Подробнее</a>
-                                <div class="card-item-new">
-                                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6"
-                                            stroke-width="2" />
-                                        <path
-                                            d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z"
-                                            fill="black" fill-opacity="0.6" />
-                                    </svg>
+                                <div class="card-button-wrapper">
+                                    <a class="product-card-button" href="#">Подробнее</a>
                                 </div>
                             </li>
-                            <li class="product-card">
+                            <li class="product-card product-card-new">
                                 <a class="product-card-link" href="#">
                                     <img class="product-card-image" src="images/catalog/product-2.jpg" width="360"
                                         height="380" alt="Профессиональная селфи-палка ">
@@ -311,16 +292,8 @@
                                     <h3 class="product-card-title">Профессиональная селфи-палка </h3>
                                 </a>
                                 <b class="product-card-price">1 500 ₽</b>
-                                <a class="product-card-button" href="#">Подробнее</a>
-                                <div class="card-item-new">
-                                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6"
-                                            stroke-width="2" />
-                                        <path
-                                            d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z"
-                                            fill="black" fill-opacity="0.6" />
-                                    </svg>
+                                <div class="card-button-wrapper">
+                                    <a class="product-card-button" href="#">Подробнее</a>
                                 </div>
                             </li>
                             <li class="product-card">
@@ -332,16 +305,8 @@
                                     <h3 class="product-card-title">Непотопляемая селфи-палка </h3>
                                 </a>
                                 <b class="product-card-price">2 500 ₽</b>
-                                <a class="product-card-button" href="#">Подробнее</a>
-                                <div class="card-item-new">
-                                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6"
-                                            stroke-width="2" />
-                                        <path
-                                            d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z"
-                                            fill="black" fill-opacity="0.6" />
-                                    </svg>
+                                <div class="card-button-wrapper">
+                                    <a class="product-card-button" href="#">Подробнее</a>
                                 </div>
                             </li>
                             <li class="product-card">
@@ -353,16 +318,8 @@
                                     <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                                 </a>
                                 <b class="product-card-price">1 500 ₽</b>
-                                <a class="product-card-button" href="#">Подробнее</a>
-                                <div class="card-item-new">
-                                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="30" cy="30" r="29" stroke="black" stroke-opacity="0.6"
-                                            stroke-width="2" />
-                                        <path
-                                            d="M13.5632 28.316V34H11.2672V24.06H13.0872L17.6932 29.912V24.06H19.9892V34H18.1132L13.5632 28.316ZM31.6763 31.984V34H24.6903V24.06H31.5503V26.076H26.9863V28.008H30.9063V29.87H26.9863V31.984H31.6763ZM39.1471 24.074H41.2611L42.2971 27.252L43.3331 24.074H45.4611L43.7671 28.694L44.7751 31.34L47.2671 24.06H49.7731L45.8951 34H43.9071L42.2971 30.108L40.7011 34H38.6991L34.8351 24.06H37.3271L39.8331 31.34L40.8131 28.694L39.1471 24.074Z"
-                                            fill="black" fill-opacity="0.6" />
-                                    </svg>
+                                <div class="card-button-wrapper">
+                                    <a class="product-card-button" href="#">Подробнее</a>
                                 </div>
                             </li>
                         </ul>
@@ -445,7 +402,8 @@
                         </a>
                     </li>
                     <li class="footer-social-item">
-                        <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru" aria-label="YouTube">
+                        <a class="footer-social-link" href="https://www.youtube.com/user/htmlacademyru"
+                            aria-label="YouTube">
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="20" cy="20" r="20" fill="white" fill-opacity="0.3" />
