@@ -333,18 +333,19 @@ img {
     position: relative;
 }
 
-.catalog::after {
-    content: "";
+.navigation-category-link-catalog {
     display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navigation-category-link-catalog::after {
+    content: "";
     width: 50px;
     height: 50px;
     border-radius: 50%;
     border: 2px solid #000000;
     opacity: 30%;
-    top: -15px;
-    left: 243px;
-    position: absolute;
-    content: "";
     background-image: url(../images/plus.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -382,6 +383,7 @@ img {
 }
 
 @supports not selector(:focus-visible) {
+
     .navigation-category-link:focus,
     .navigation-catalog-link:focus {
         outline: 2px solid #af4fff;
@@ -631,13 +633,21 @@ img {
     background-color: #000000;
 }
 
-.slider-pagination-item:focus-within {
+.slider-pagination-item:has(button:focus-visible) {
     outline: 2px solid #af4fff;
     outline-offset: 2px;
 }
 
 .slider-pagination-button:focus-visible {
     outline: none;
+}
+
+@supports not selector(:focus-visible) {
+
+    .slider-pagination-item:has(button:focus) {
+        outline: 2px solid #af4fff;
+        outline-offset: 2px;
+    }
 }
 
 /* Categories */
