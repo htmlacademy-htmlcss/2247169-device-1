@@ -326,14 +326,6 @@ img {
     list-style-type: none;
 }
 
-.navigation-catalog {
-    /* display: none; */
-    list-style-type: none;
-    position: absolute;
-    display: block;
-    width: 100%;
-}
-
 .navigation-item:first-child {
     display: flex;
     align-items: center;
@@ -341,7 +333,7 @@ img {
     position: relative;
 }
 
-.navigation-item:first-child::after {
+.catalog::after {
     content: "";
     display: flex;
     width: 50px;
@@ -358,8 +350,8 @@ img {
     background-position: center;
 }
 
-.navigation-item:first-child:hover::after,
-.navigation-item:first-child:active::after {
+.catalog:hover::after,
+.catalog:active::after {
     opacity: 100%;
 }
 
@@ -384,14 +376,14 @@ img {
 }
 
 .navigation-category-link:focus-visible,
-.navigation-catalog-link:focus-visible  {
+.navigation-catalog-link:focus-visible {
     outline: 2px solid #af4fff;
     outline-offset: 2px;
 }
 
 @supports not selector(:focus-visible) {
     .navigation-category-link:focus,
-    .navigation-catalog-link:focus  {
+    .navigation-catalog-link:focus {
         outline: 2px solid #af4fff;
         outline-offset: 2px;
     }
@@ -431,17 +423,18 @@ img {
     left: -1px;
     width: 100%;
     height: 2px;
-    background-color:#000000;
+    background-color: #000000;
 }
 
 .navigation-catalog {
     display: none;
+    list-style-type: none;
 }
 
 .navigation-catalog-active {
     display: block;
     list-style-type: none;
-    position: absolute; 
+    position: absolute;
     width: 1160px;
     height: 180px;
     top: 17px;
@@ -759,20 +752,14 @@ img {
     color: #ffe17f;
     position: relative;
     background: linear-gradient(#000000, #000000);
+    width: 280px;
+    text-align: left;
+    padding-left: 20px;
 }
 
-.capabilities-button.active::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0px;
-    right: -120px;
-    width: 120px;
-    background-color: #000000;
-}
-
-.capabilities-button.active:hover {
-    text-align: end;
+.capabilities-button.active:hover,
+.capabilities-button.active:active {
+    padding-left: 40px;
 }
 
 .capabilities-content {
@@ -820,6 +807,7 @@ img {
     text-align: center;
     background-color: #f0f0f0;
     border: none;
+    cursor: pointer;
 }
 
 .delivery-button::before {
@@ -1223,12 +1211,18 @@ img {
     }
 }
 
-.footer-social-link:hover svg circle {
-    fill-opacity: 100%;
-    fill: #ffc700;
+.footer-social-link {
+    color: #ffffff;
+    opacity: 30%;
 }
 
-.footer-social-link:active svg {
+.footer-social-link:hover {
+    color: #ffc700;
+    opacity: 100%;
+}
+
+.footer-social-link:active {
+    color: #ffc700;
     fill-opacity: 30%;
 }
 
@@ -1505,11 +1499,27 @@ img {
     margin-bottom: 17px;
 }
 
-.catalog-filter-item:hover {
+.control-input[type="checkbox"]:disabled~.control-mark {
+    opacity: 10%;
+}
+
+.control-input[type="checkbox"]:disabled~.control-label {
+    opacity: 10%;
+}
+
+.control-input[type="checkbox"]:hover:not(:disabled)~.control-mark {
     opacity: 60%;
 }
 
-.catalog-filter-item:active {
+.control-input[type="checkbox"]:hover:not(:disabled)~.control-label {
+    opacity: 60%;
+}
+
+.control-input[type="checkbox"]:active:not(:disabled)~.control-mark {
+    opacity: 30%;
+}
+
+.control-input[type="checkbox"]:active:not(:disabled)~.control-label {
     opacity: 30%;
 }
 
@@ -1525,13 +1535,17 @@ img {
     left: 0;
     width: 20px;
     height: 20px;
-    border: 2px solid #000000;
+    border: 2px solid #cccc;
     border-radius: 3px;
 }
 
 .control-label {
     font-size: 16px;
     line-height: 20px;
+}
+
+.control-input[type="checkbox"]:checked+.control-mark {
+    border-color: #000000;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
@@ -1556,6 +1570,18 @@ img {
 
 .control-input[type="radio"]+.control-mark {
     border-radius: 50%;
+}
+
+.control-input[type="radio"]:disabled~.control-mark {
+    opacity: 10%;
+}
+
+.control-input[type="radio"]:disabled~.control-label {
+    opacity: 10%;
+}
+
+.control-input[type="radio"]:checked+.control-mark {
+    border-color: #000000;
 }
 
 .control-input[type="radio"]:checked+.control-mark::before {
