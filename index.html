@@ -61,7 +61,7 @@
             </a>
           </li>
           <li class="user-menu-item">
-            <a class="user-menu-link basket" href="#" data-value="10">
+            <a class="user-menu-link cart" href="#" data-value="2">
               <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_48539_962)">
                   <path
@@ -76,6 +76,50 @@
               </svg>
               <span>Корзина</span>
             </a>
+
+            <div class="popover popover-cart">
+              <div class="popover-content">
+                <h2 class="popover-title visually-hidden">Корзина</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="#">
+                      <img class="cart-item-image" src="images/cart-item-img.png" alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                    </a>
+                    <button class="cart-item-button" type="button">
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                          fill="white" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="#">
+                      <img class="cart-item-image" src="images/cart-item-img.png" alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Любительская селфи-палка</p>
+                    </a>
+                    <button class="cart-item-button" type="button">
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                          fill="white" />
+                      </svg>
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="cart-items-info">
+                  <span class="cart-item-number">Товаров: 2</span>
+                  <span class="cart-items-price">Сумма: 2000</span>
+                </div>
+                <div class="cart-list-button-wrapper">
+                  <button class="cart-list-button">Открыть корзину</button>
+                </div>
+              </div>
+            </div>
+
           </li>
         </ul>
       </nav>
@@ -85,27 +129,31 @@
       <ul class="navigation-list">
         <li class="navigation-item">
           <a class="navigation-category-link navigation-category-link-catalog" href="#">Каталог товаров</a>
-          <ul class="navigation-catalog">
-            <li class="navigation-catalog-item">
-              <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="navigation-catalog-item">
-              <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
-            </li>
-            <li class="navigation-catalog-item">
-              <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="navigation-catalog-item">
-              <a class="navigation-catalog-link navigation-link-current" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="navigation-catalog-item">
-              <a class="navigation-catalog-link" href="#">Умные часы</a>
-            </li>
-            <li class="navigation-catalog-item">
-              <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </li>
+          <div class="navigation-catalog">
+            <ul class="navigation-catalog-list">
+              <li class="navigation-catalog-item">
+                <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="navigation-catalog-item">
+                <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+              </li>
+              <li class="navigation-catalog-item">
+                <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="navigation-catalog-list">
+              <li class="navigation-catalog-item">
+                <a class="navigation-catalog-link navigation-link-current" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="navigation-catalog-item">
+                <a class="navigation-catalog-link" href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="navigation-catalog-list">
+              <li class="navigation-catalog-item">
+                <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
         <li class="navigation-item">
           <a class="navigation-category-link" href="#">Доставка</a>
         </li>
@@ -438,6 +486,79 @@
       </div>
     </div>
   </footer>
+
+  <div class="modal-container">
+    <div class="modal modal-delivery">
+      <section class="modal-header">
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <button class="modal-close-button">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"
+              fill="black" />
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
+      <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="field-group delivery-form-name">
+          <label class="form-label" for="modal-delivery-name">
+            Ваше имя:
+          </label>
+          <input class="field field-name" type="text" id="modal-delivery-name" name="modal-delivery-name"
+            placeholder="Введите имя" required>
+          <span class="field-name-text">Добавьте имя</span>
+        </p>
+
+        <p class="field-group delivery-form-email">
+          <label class="form-label" for="modal-delivery-email">
+            Ваш e-mail:
+          </label>
+          <input class="field field-email" type="email" id="modal-delivery-email" name="modal-delivery-email"
+            placeholder="Введите e-mail" required>
+          <span class="field-email-text">Забавный у вас адрес</span>
+        </p>
+
+        <p class="field-group delivery-form-items">
+          <label class="form-label" for="modal-delivery-items">
+            Что нужно привезти:
+          </label>
+          <input class="field field-delivery" type="text" id="modal-delivery-items" name="modal-delivery-items"
+            placeholder="В свободной форме" required>
+        </p>
+
+
+        <div class="field-group delivery-form-number">
+          <span class="form-label form-label-icon">
+            <label class="form-label" for="modal-delivery-number">
+              Количество:
+            </label>
+            <span class="tooltip">
+              <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="13" cy="13" r="13" fill="#FFE17F" />
+                  <path d="M14 7H12V9H14V7Z" fill="black" />
+                  <path d="M14 11H12V19H14V11Z" fill="black" />
+                </svg>
+              </button>
+              <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Постараемся найти, сколько
+                нужно. Привезём сколько получится по требованиям
+                к провозу багажа.</span>
+            </span>
+          </span>
+          <div class="number">
+            <button class="number-minus" type="button"
+              onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+            <input class="field field-number" type="number" step="1" min="1" id="modal-delivery-number"
+              name="modal-delivery-number" placeholder="1" required>
+            <button class="number-plus" type="button"
+              onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+          </div>
+        </div>
+        <button class="button modal-delivery-button" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
