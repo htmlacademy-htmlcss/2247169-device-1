@@ -1646,7 +1646,7 @@ img {
     background-position: center right 20px;
 }
 
-.error .field {
+.error .field:not(input[type="number"]) {
     outline: 2px solid #ff3d3d;
 }
 
@@ -1667,6 +1667,8 @@ img {
 .number {
     display: flex;
     width: 180px;
+    column-gap: 2px;
+    background-color: rgba(240, 240, 240, 1);
 }
 
 .field-number {
@@ -1911,7 +1913,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-filter-group:last-of-type {
     margin: 0 0 35px;
-} 
+}
 
 .catalog-filter-group::before {
     content: "";
