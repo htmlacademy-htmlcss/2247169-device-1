@@ -65,7 +65,7 @@
                         </a>
                     </li>
                     <li class="user-menu-item">
-                        <a class="user-menu-link cart" href="#" data-value="10">
+                        <a class="user-menu-link cart" href="#" data-value="3">
                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_48539_962)">
@@ -81,6 +81,69 @@
                             </svg>
                             <span>Корзина</span>
                         </a>
+
+                        <div class="popover popover-cart">
+                            <div class="popover-content">
+                                <h2 class="popover-title visually-hidden">Корзина</h2>
+                                <ul class="cart-items-list">
+                                    <li class="cart-item">
+                                        <a class="cart-item-link" href="#">
+                                            <img class="cart-item-image" src="images/cart-item-img.png"
+                                                alt="Любительская селфи-палка">
+                                            <p class="cart-item-title">Любительская селфи-палка</p>
+                                        </a>
+                                        <button class="cart-item-button" type="button">
+                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span class="visually-hidden">Удалить из корзины</span>
+                                        </button>
+                                    </li>
+                                    <li class="cart-item">
+                                        <a class="cart-item-link" href="#">
+                                            <img class="cart-item-image" src="images/cart-item-img.png"
+                                                alt="Любительская селфи-палка">
+                                            <p class="cart-item-title">Любительская селфи-палка</p>
+                                        </a>
+                                        <button class="cart-item-button" type="button">
+                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span class="visually-hidden">Удалить из корзины</span>
+                                        </button>
+                                    </li>
+                                    <li class="cart-item">
+                                        <a class="cart-item-link" href="#">
+                                            <img class="cart-item-image" src="images/cart-item-img.png"
+                                                alt="Любительская селфи-палка">
+                                            <p class="cart-item-title">Любительская селфи-палка</p>
+                                        </a>
+                                        <button class="cart-item-button" type="button">
+                                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M10 1.07584L9.09091 0.166748L5 4.25766L0.909091 0.166748L0 1.07584L4.09091 5.16675L0 9.25766L0.909091 10.1667L5 6.07584L9.09091 10.1667L10 9.25766L5.90909 5.16675L10 1.07584Z"
+                                                    fill="white" />
+                                            </svg>
+                                            <span class="visually-hidden">Удалить из корзины</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="cart-items-info">
+                                    <span class="cart-item-number">Товаров: 2</span>
+                                    <span class="cart-items-price">Сумма: 2000</span>
+                                </div>
+                                <div class="cart-list-button-wrapper">
+                                    <button class="cart-list-button">Открыть корзину</button>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -90,26 +153,31 @@
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <a class="navigation-category-link navigation-category-link-catalog" href="#">Каталог товаров</a>
-                    <ul class="navigation-catalog visually-hidden">
-                        <li class="navigation-catalog-item">
-                            <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
-                        </li>
-                        <li class="navigation-catalog-item">
-                            <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
-                        </li>
-                        <li class="navigation-catalog-item">
-                            <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
-                        </li>
-                        <li class="navigation-catalog-item">
-                            <a class="navigation-catalog-link" href="#">Фитнес-браслеты</a>
-                        </li>
-                        <li class="navigation-catalog-item">
-                            <a class="navigation-catalog-link" href="#">Умные часы</a>
-                        </li>
-                        <li class="navigation-catalog-item">
-                            <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
-                        </li>
-                    </ul>
+                    <div class="navigation-catalog">
+                        <ul class="navigation-catalog-list">
+                            <li class="navigation-catalog-item">
+                                <a class="navigation-catalog-link" href="#">Виртуальная реальность</a>
+                            </li>
+                            <li class="navigation-catalog-item">
+                                <a class="navigation-catalog-link" href="catalog.html">Моноподы для cелфи</a>
+                            </li>
+                            <li class="navigation-catalog-item">
+                                <a class="navigation-catalog-link" href="#">Экшн-камеры</a>
+                            </li>
+                        </ul>
+                        <ul class="navigation-catalog-list">
+                            <li class="navigation-catalog-item">
+                                <a class="navigation-catalog-link navigation-link-current" href="#">Фитнес-браслеты</a>
+                            </li>
+                            <li class="navigation-catalog-item">
+                                <a class="navigation-catalog-link" href="#">Умные часы</a>
+                            </li>
+                        </ul>
+                        <ul class="navigation-catalog-list">
+                            <li class="navigation-catalog-item">
+                                <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
+                            </li>
+                        </ul>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-category-link" href="#">Доставка</a>
@@ -254,13 +322,13 @@
                         </select>
                         <div class="sorting-buttons-container">
                             <button class="sorting-button">
-                                <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                <svg width="12" height="10" viewBox="0 0 12 10" fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 0L11.5 10H0.5" fill="black" />
                                 </svg>
                             </button>
                             <button class="sorting-button">
-                                <svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+                                <svg width="12" height="10" viewBox="0 0 12 10" fill="currentColor"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
                                 </svg>

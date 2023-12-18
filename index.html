@@ -77,7 +77,7 @@
               <span>Корзина</span>
             </a>
 
-            <div class="popover popover-cart">
+            <div class="popover popover-cart popover-show ">
               <div class="popover-content">
                 <h2 class="popover-title visually-hidden">Корзина</h2>
                 <ul class="cart-items-list">
@@ -507,7 +507,7 @@
           </label>
           <input class="field field-name" type="text" id="modal-delivery-name" name="modal-delivery-name"
             placeholder="Введите имя" required>
-          <span class="field-name-text">Добавьте имя</span>
+          <span class="error-text"></span>
         </p>
 
         <p class="field-group delivery-form-email">
@@ -516,7 +516,7 @@
           </label>
           <input class="field field-email" type="email" id="modal-delivery-email" name="modal-delivery-email"
             placeholder="Введите e-mail" required>
-          <span class="field-email-text">Забавный у вас адрес</span>
+          <span class="error-text"></span>
         </p>
 
         <p class="field-group delivery-form-items">
@@ -525,6 +525,7 @@
           </label>
           <input class="field field-delivery" type="text" id="modal-delivery-items" name="modal-delivery-items"
             placeholder="В свободной форме" required>
+          <span class="error-text"></span>
         </p>
 
 
@@ -547,13 +548,12 @@
             </span>
           </span>
           <div class="number">
-            <button class="number-minus" type="button"
-              onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+            <button class="number-minus" type="button"></button>
             <input class="field field-number" type="number" step="1" min="1" id="modal-delivery-number"
               name="modal-delivery-number" placeholder="1" required>
-            <button class="number-plus" type="button"
-              onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+            <button class="number-plus" type="button"></button>
           </div>
+          <span class="error-text"></span>
         </div>
         <button class="button modal-delivery-button" type="submit">Отправить</button>
       </form>
