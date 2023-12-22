@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог магазина «Девайс»</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -65,7 +66,7 @@
                         </a>
                     </li>
                     <li class="user-menu-item">
-                        <a class="user-menu-link cart" href="#" data-value="3">
+                        <a class="user-menu-link cart" href="#" data-value="2">
                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_48539_962)">
@@ -88,8 +89,8 @@
                                 <ul class="cart-items-list">
                                     <li class="cart-item">
                                         <a class="cart-item-link" href="#">
-                                            <img class="cart-item-image" src="images/cart-item-img.png"
-                                                alt="Любительская селфи-палка">
+                                            <img class="cart-item-image" src="images/cart-item-img.png" width="39"
+                                                height="43" alt="Любительская селфи-палка">
                                             <p class="cart-item-title">Любительская селфи-палка</p>
                                         </a>
                                         <button class="cart-item-button" type="button">
@@ -104,8 +105,8 @@
                                     </li>
                                     <li class="cart-item">
                                         <a class="cart-item-link" href="#">
-                                            <img class="cart-item-image" src="images/cart-item-img.png"
-                                                alt="Любительская селфи-палка">
+                                            <img class="cart-item-image" src="images/cart-item-img.png" width="39"
+                                                height="43" alt="Любительская селфи-палка">
                                             <p class="cart-item-title">Любительская селфи-палка</p>
                                         </a>
                                         <button class="cart-item-button" type="button">
@@ -120,9 +121,10 @@
                                     </li>
                                     <li class="cart-item">
                                         <a class="cart-item-link" href="#">
-                                            <img class="cart-item-image" src="images/cart-item-img.png"
-                                                alt="Любительская селфи-палка">
-                                            <p class="cart-item-title">Любительская селфи-палка</p>
+                                            <img class="cart-item-image" src="images/cart-item-img-2.png" width="39"
+                                                height="43" alt="Любительская селфи-палка">
+                                            <p class="cart-item-title">Профессиональная
+                                                селфи-палка</p>
                                         </a>
                                         <button class="cart-item-button" type="button">
                                             <svg width="10" height="11" viewBox="0 0 10 11" fill="none"
@@ -178,6 +180,7 @@
                                 <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
                             </li>
                         </ul>
+                    </div>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-category-link" href="#">Доставка</a>
@@ -222,11 +225,11 @@
 
                                 <div class="range">
                                     <div class="range-scale">
-                                        <div class="range-bar" style="left: 0px; width: 136px">
+                                        <div class="range-bar" style="left: 0px; width: 119px">
                                             <button class="range-toggle toggle-min"
-                                                aria-label="Изменить минимальную цену"></button>
+                                                aria-label="Изменить минимальную цену" type="button" ></button>
                                             <button class="range-toggle toggle-max"
-                                                aria-label="Изменить максимальную цену"></button>
+                                                aria-label="Изменить максимальную цену" type="button" ></button>
                                         </div>
                                     </div>
 
@@ -242,12 +245,12 @@
                             </fieldset>
 
                             <fieldset class="catalog-filter-group">
-                                <legend class="catalog-filter-title">Цвет</legend>
+                                <legend class="catalog-filter-title color">Цвет</legend>
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control">
                                             <input class="visually-hidden control-input" type="checkbox" name="color"
-                                                value="black" disabled>
+                                                value="black">
                                             <span class="control-mark"></span>
                                             <span class="control-label">Черный</span>
                                         </label>
@@ -288,7 +291,7 @@
                             </fieldset>
 
                             <fieldset class="catalog-filter-group">
-                                <legend class="catalog-filter-title">Bluetooth</legend>
+                                <legend class="catalog-filter-title bluetooth">Bluetooth</legend>
                                 <ul class="catalog-filter-list">
                                     <li class="catalog-filter-item">
                                         <label class="control">
@@ -315,7 +318,7 @@
 
                     <div class="sorting-container">
                         <h3 class="catalog-products-subtitle">Сортировка:</h3>
-                        <select class="select-control">
+                        <select class="select-control" aria-label="Сортировка">
                             <option value="popular">Популярные</option>
                             <option value="cheap">Дешевые</option>
                             <option value="expensive">Дорогие</option>
@@ -370,7 +373,7 @@
                                         height="380" alt="Непотопляемая селфи-палка ">
                                 </a>
                                 <a class="product-text-link" href="#">
-                                    <h3 class="product-card-title">Непотопляемая селфи-палка </h3>
+                                    <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                                 </a>
                                 <b class="product-card-price">2 500 ₽</b>
                                 <div class="card-button-wrapper">
@@ -406,10 +409,10 @@
                                 <a class="pagination-link" href="#">3</a>
                             </li>
                             <li class="pagination-item">
-                                <a class="pagination-link" href="#">4</a>
+                                <a class="pagination-link" href="#">...</a>
                             </li>
                             <li class="pagination-item">
-                                <a class="pagination-link" href="#">5</a>
+                                <a class="pagination-link" href="#">15</a>
                             </li>
                             <li class="pagination-item next-button">
                                 <a class="pagination-show-more" href="#">Вперед</a>
@@ -503,7 +506,7 @@
             </div>
 
             <div class="footer-phone">
-                <a class="footer-phone-text" href="tel:78128121212">+7 (812) 812-12-12</a>
+                <a class="footer-phone-text" href="tel:78128121212">Тел.: +7 (812) 812-12-12</a>
                 <a class="footer-phone-logo" href="https://htmlacademy.ru/">
                     <img src="images/footer-academy-logo.svg" width="115" height="33" alt="Логотип сайта академии">
                 </a>

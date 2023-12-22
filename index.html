@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Интернет-магазин «Девайс»</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -77,13 +78,14 @@
               <span>Корзина</span>
             </a>
 
-            <div class="popover popover-cart popover-show ">
+            <div class="popover popover-cart">
               <div class="popover-content">
                 <h2 class="popover-title visually-hidden">Корзина</h2>
                 <ul class="cart-items-list">
                   <li class="cart-item">
                     <a class="cart-item-link" href="#">
-                      <img class="cart-item-image" src="images/cart-item-img.png" alt="Любительская селфи-палка">
+                      <img class="cart-item-image" src="images/cart-item-img.png" width="39" height="43"
+                        alt="Любительская селфи-палка">
                       <p class="cart-item-title">Любительская селфи-палка</p>
                     </a>
                     <button class="cart-item-button" type="button">
@@ -97,8 +99,10 @@
                   </li>
                   <li class="cart-item">
                     <a class="cart-item-link" href="#">
-                      <img class="cart-item-image" src="images/cart-item-img.png" alt="Любительская селфи-палка">
-                      <p class="cart-item-title">Любительская селфи-палка</p>
+                      <img class="cart-item-image" src="images/cart-item-img-2.png" width="39" height="43"
+                        alt="Любительская селфи-палка">
+                      <p class="cart-item-title">Профессиональная
+                        селфи-палка</p>
                     </a>
                     <button class="cart-item-button" type="button">
                       <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -154,6 +158,7 @@
                 <a class="navigation-catalog-link" href="#">Квадрокоптеры</a>
               </li>
             </ul>
+          </div>
         <li class="navigation-item">
           <a class="navigation-category-link" href="#">Доставка</a>
         </li>
@@ -170,11 +175,12 @@
   <main class="main-container main-index">
     <h1 class="visually-hidden">Интернет-магазин «Девайс»</h1>
     <section class="hero-block container">
+      <h2 class="visually-hidden">Слайдер с популярными товарами</h2>
       <div class="slider-item active">
         <img class="slider-item-image" src="images/slider/slider-quadcopter.png" width="560" height="560"
           alt="Квадрокоптер">
         <div class="slider-item-text" data-value="01">
-          <h2 class="visually-hidden">Квадрокоптер</h2>
+          <h3 class="visually-hidden">Квадрокоптер</h3>
           <p class="slider-item-title">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-item-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
             замаскированным под стандартную камеру.
@@ -193,8 +199,8 @@
         <img class="slider-item-image" src="images/slider/slider-fitness-bracelet.png" width="560" height="560"
           alt="Фитнес-браслет">
         <div class="slider-item-text" data-value="02">
-          <h2 class="visually-hidden">Фитнес-браслет</h2>
-          <p class="slider-item-title">Худеем правильно!</p>
+          <h3 class="visually-hidden">Фитнес-браслет</h3>
+          <p class="slider-item-title">Худеем <br> правильно!</p>
           <p class="slider-item-description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
             занятия и соблюдать диету.</p>
           <a class="button slider-item-link" href="#">Подробнее</a>
@@ -209,8 +215,8 @@
         <img class="slider-item-image" src="images/slider/slider-selfie-stick.png" width="560" height="560"
           alt="Селфи-палка">
         <div class="slider-item-text" data-value="03">
-          <h2 class="visually-hidden">Селфи-палка</h2>
-          <p class="slider-item-title">Делай селфи, как Бен Стиллер!</p>
+          <h3 class="visually-hidden">Селфи-палка</h3>
+          <p class="slider-item-title">Делай селфи, <br> как Бен Стиллер!</p>
           <p class="slider-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
             Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="button slider-item-link" href="#">Подробнее</a>
@@ -239,11 +245,11 @@
 
       <ol class="slider-pagination">
         <li class="slider-pagination-item">
-          <button class="slider-pagination-button" type="button" aria-label="Первое фото"></button>
+          <button class="slider-pagination-button  slider-pagination-button-current" type="button"
+            aria-label="Первое фото"></button>
         </li>
         <li class="slider-pagination-item">
-          <button class="slider-pagination-button slider-pagination-button-current" type="button"
-            aria-label="Второе фото"></button>
+          <button class="slider-pagination-button" type="button" aria-label="Второе фото"></button>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button" aria-label="Третье фото"></button>
@@ -256,7 +262,7 @@
       <ul class="categories-list">
         <li class="categories-item">
           <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-vurtual-reality.svg" width="" height=""
+            <img src="images/categories/category-item-vurtual-reality.svg" width="97" height="54"
               alt="Виртуальная реальность">
           </a>
           <a class="categories-item-title" href="#">
@@ -265,15 +271,15 @@
         </li>
         <li class="categories-item">
           <a class="categories-item-image selfie-monopod" href="#">
-            <img src="images/categories/category-item-selfie.svg" width="" height="" alt="Моноподы для селфи">
+            <img src="images/categories/category-item-selfie.svg" width="86" height="117" alt="Моноподы для селфи">
           </a>
           <a class="categories-item-title" href="#">
-            <h3>Моноподы для селфи</h3>
+            <h3>Моноподы <br> для селфи</h3>
           </a>
         </li>
         <li class="categories-item">
           <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-cameras.svg" width="" height="" alt="Экшн-камеры">
+            <img src="images/categories/category-item-cameras.svg" width="71" height="87" alt="Экшн-камеры">
           </a>
           <a class="categories-item-title" href="#">
             <h3>Экшн-камеры</h3>
@@ -281,7 +287,7 @@
         </li>
         <li class="categories-item">
           <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-bracelets.svg" width="" height="" alt="Фитнес-браслеты">
+            <img src="images/categories/category-item-bracelets.svg" width="108" height="65" alt="Фитнес-браслеты">
           </a>
           <a class="categories-item-title" href="#">
             <h3>Фитнес-браслеты</h3>
@@ -289,7 +295,7 @@
         </li>
         <li class="categories-item">
           <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-watch.svg" width="" height="" alt="Умные часы">
+            <img src="images/categories/category-item-watch.svg" width="56" height="98" alt="Умные часы">
           </a>
           <a class="categories-item-title" href="#">
             <h3>Умные часы</h3>
@@ -297,7 +303,7 @@
         </li>
         <li class="categories-item">
           <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-quadcopter.svg" width="" height="" alt="Квадракоптеры">
+            <img src="images/categories/category-item-quadcopter.svg" width="132" height="69" alt="Квадракоптеры">
           </a>
           <a class="categories-item-title" href="#">
             <h3>Квадракоптеры</h3>
@@ -310,26 +316,26 @@
       <h2 class="visually-hidden">Возможности</h2>
       <div class="capabilities-wrapper container">
         <div class="capabilities-buttons-container">
-          <button class="button capabilities-button active" data-id="delivery">Доставка</button>
-          <button class="button capabilities-button" data-id="guarantee">Гарантия</button>
-          <button class=" button capabilities-button" data-id="credit">Кредит</button>
+          <button class="button capabilities-button active" type="button" data-id="delivery">Доставка</button>
+          <button class="button capabilities-button" type="button" data-id="guarantee">Гарантия</button>
+          <button class=" button capabilities-button" type="button" data-id="credit">Кредит</button>
         </div>
         <div class="capabilities-content-container">
           <div class="capabilities-content active" id="delivery">
             <div class="capabilities-content-text">
               <h3 class="capabilities-content-title">Доставка</h3>
-              <p class="capabilities-content-subtitle">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              <p class="capabilities-content-subtitle">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно! Ведь
+                мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
             <img src="images/capabilities/delivery.svg" width="136" height="164" alt="Доставка товара">
           </div>
           <div class="capabilities-content" id="guarantee">
             <div class="capabilities-content-text">
               <h3 class="capabilities-content-title">Гарантия</h3>
-              <p class="capabilities-content-subtitle">Если из-за возгорания купленного у нас товара у вас
-                сгорит дом — не переживайте, мы выдадим вам новый.
-                Товар, не дом, конечно же.</p>
+              <p class="capabilities-content-subtitle">Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
             </div>
             <img src="images/capabilities/guarantee.svg" width="171" height="195" alt="Гарантия на товары">
           </div>
@@ -354,7 +360,7 @@
     <div class="information-wrapper container">
       <section class="shop-information">
         <h2 class="shop-information-title">О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
         <ul class="shop-information-delivery">
           <li>Меловые линии</li>
@@ -366,7 +372,9 @@
 
       <section class="contacts">
         <h2 class="contacts-title">Контакты</h2>
-        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки. </p>
+        <p class="contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить
+          работоспособность покупки.
+        </p>
         <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
         <address class="contacts-address">
           <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -385,8 +393,8 @@
       <div class="subscription-wrapper container">
         <div class="subscription-text">
           <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
-            спецпредложения и вот это вот всё.</p>
+          <p>Еженедельный дайджест с обзорами новинок,
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         </div>
         <div class="subscription-form-container">
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -497,7 +505,7 @@
               d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"
               fill="black" />
           </svg>
-          <span class="visually-hidden">Закрыть</span>
+          <span class="visually-hidden">Закрыть окно</span>
         </button>
       </section>
       <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
