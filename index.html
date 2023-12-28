@@ -509,22 +509,22 @@
         </button>
       </section>
       <form class="modal-delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-        <p class="field-group delivery-form-name error">
+        <p class="field-group delivery-form-name">
           <label class="form-label" for="modal-delivery-name">
             Ваше имя:
           </label>
           <input class="field field-name" type="text" id="modal-delivery-name" name="modal-delivery-name"
-            placeholder="Введите имя" required>
-          <span class="error-text">Добавьте имя</span>
+            placeholder="Введите имя">
+          <span class="error-text"></span>
         </p>
 
-        <p class="field-group delivery-form-email error">
+        <p class="field-group delivery-form-email">
           <label class="form-label" for="modal-delivery-email">
             Ваш e-mail:
           </label>
-          <input class="field field-email" type="email" id="modal-delivery-email" name="modal-delivery-email"
-            placeholder="Введите e-mail" required>
-          <span class="error-text">Забавный у вас адрес</span>
+          <input class="field field-email" type="text" id="modal-delivery-email" name="modal-delivery-email"
+            placeholder="Введите e-mail">
+          <span class="error-text"></span>
         </p>
 
         <p class="field-group delivery-form-items">
@@ -532,7 +532,7 @@
             Что нужно привезти:
           </label>
           <input class="field field-delivery" type="text" id="modal-delivery-items" name="modal-delivery-items"
-            placeholder="В свободной форме" required>
+            placeholder="В свободной форме">
           <span class="error-text"></span>
         </p>
 
@@ -558,7 +558,7 @@
           <div class="number">
             <button class="number-minus" type="button"></button>
             <input class="field field-number" type="number" step="1" min="1" id="modal-delivery-number"
-              name="modal-delivery-number" placeholder="1" required>
+              name="modal-delivery-number" value="1" required>
             <button class="number-plus" type="button"></button>
           </div>
           <span class="error-text"></span>
@@ -567,6 +567,8 @@
       </form>
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
