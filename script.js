@@ -1,21 +1,21 @@
 // Change the capabilities items
-const capabilitiesInformaion = document.querySelector(".capabilities-wrapper");
-const capabilitiesButton = document.querySelectorAll(".capabilities-button");
-const capabilityItem = document.querySelectorAll(".capabilities-content");
+const capabilitiesInformaion = document.querySelector('.capabilities-wrapper');
+const capabilitiesButton = document.querySelectorAll('.capabilities-button');
+const capabilityItem = document.querySelectorAll('.capabilities-content');
 
-capabilitiesInformaion.addEventListener("click", function (e) {
+capabilitiesInformaion.addEventListener('click', function (e) {
     const id = e.target.dataset.id;
     if (id) {
         capabilitiesButton.forEach(function (btn) {
-            btn.classList.remove("active");
+            btn.classList.remove('active');
         });
-        e.target.classList.add("active");
+        e.target.classList.add('active');
 
         capabilityItem.forEach(function (item) {
-            item.classList.remove("active");
+            item.classList.remove('active');
         });
         const element = document.getElementById(id);
-        element.classList.add("active");
+        element.classList.add('active');
     }
 });
 
