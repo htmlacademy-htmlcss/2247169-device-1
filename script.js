@@ -19,6 +19,25 @@ capabilitiesInformaion.addEventListener('click', function (e) {
     }
 });
 
+// Subscription form
+const subscriptionForm = document.querySelector('.subscription-form');
+const subscriptionFormInput = subscriptionForm.querySelector('.subscription-placeholder');
+
+subscriptionForm.addEventListener('submit', function (e) {
+    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (!subscriptionFormInput.value.match(validRegex)) {
+        subscriptionFormInput.classList.add('subscription-error');
+        e.preventDefault();
+    } else {
+        subscriptionFormInput.classList.remove('subscription-error');
+    }
+});
+
+document.addEventListener('click', function (e) {
+    subscriptionFormInput.classList.remove('subscription-error');
+});
+
 // Modal window
 // Show modal window (delivery)
 const deliveryButton = document.querySelector('.delivery-button');
@@ -74,7 +93,7 @@ function checkValidEmail() {
         emailField.parentElement.classList.add('error');
         emailField.nextElementSibling.innerHTML = 'Забавный у вас адрес';
         e.preventDefault();
-    } 
+    }
      else {
         emailField.parentElement.classList.remove('error');
         emailField.nextElementSibling.innerHTML = '';

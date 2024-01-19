@@ -1317,11 +1317,6 @@ img {
   background: transparent;
 }
 
-.subscription-placeholder:invalid {
-  background: transparent;
-  border-bottom: 3px solid #ff3d3d;
-}
-
 .subscription-placeholder:disabled {
   opacity: 0.3;
 }
