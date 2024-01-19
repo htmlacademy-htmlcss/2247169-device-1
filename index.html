@@ -22,7 +22,7 @@
     <div class="header-container">
       <form class="header-search" action="https://echo.htmlacademy.ru/" method="get">
         <div class="search-field-wrapper">
-          <input class="search-field" type="search" name="menu-search" placeholder="Поиск по сайту">
+          <input class="search-field" type="search" name="menu-search" placeholder="Поиск по сайту" required>
         </div>
         <div class="search-button-wrapper">
           <button class="search-button" type="submit">Найти</button>
@@ -84,7 +84,7 @@
                 <ul class="cart-items-list">
                   <li class="cart-item">
                     <a class="cart-item-link" href="#">
-                      <img class="cart-item-image" src="images/cart-item-img.png" width="39" height="43"
+                      <img class="cart-item-image" src="images/cart-item-img.jpg" width="39" height="43"
                         alt="Любительская селфи-палка">
                       <p class="cart-item-title">Любительская селфи-палка</p>
                     </a>
@@ -99,7 +99,7 @@
                   </li>
                   <li class="cart-item">
                     <a class="cart-item-link" href="#">
-                      <img class="cart-item-image" src="images/cart-item-img-2.png" width="39" height="43"
+                      <img class="cart-item-image" src="images/cart-item-img-2.jpg" width="39" height="43"
                         alt="Любительская селфи-палка">
                       <p class="cart-item-title">Профессиональная
                         селфи-палка</p>
@@ -119,7 +119,7 @@
                   <span class="cart-items-price">Сумма: <span>2000</span> ₽</span>
                 </div>
                 <div class="cart-list-button-wrapper">
-                  <button class="cart-list-button">Открыть корзину</button>
+                  <button class="cart-list-button" type="button">Открыть корзину</button>
                 </div>
               </div>
             </div>
@@ -260,51 +260,32 @@
     <section class="categories container">
       <h2 class="visually-hidden">Категории товаров</h2>
       <ul class="categories-list">
-        <li class="categories-item">
-          <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-vurtual-reality.svg" width="97" height="54"
-              alt="Виртуальная реальность">
-          </a>
+        <li class="categories-item virtual-reality">
           <a class="categories-item-title" href="#">
             <h3>Виртуальная реальность</h3>
           </a>
         </li>
-        <li class="categories-item">
-          <a class="categories-item-image selfie-monopod" href="#">
-            <img src="images/categories/category-item-selfie.svg" width="86" height="117" alt="Моноподы для селфи">
-          </a>
+        <li class="categories-item selfie-monopod">
           <a class="categories-item-title" href="#">
             <h3>Моноподы <br> для селфи</h3>
           </a>
         </li>
-        <li class="categories-item">
-          <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-cameras.svg" width="71" height="87" alt="Экшн-камеры">
-          </a>
+        <li class="categories-item cameras">
           <a class="categories-item-title" href="#">
             <h3>Экшн-камеры</h3>
           </a>
         </li>
-        <li class="categories-item">
-          <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-bracelets.svg" width="108" height="65" alt="Фитнес-браслеты">
-          </a>
+        <li class="categories-item bracelets">
           <a class="categories-item-title" href="#">
             <h3>Фитнес-браслеты</h3>
           </a>
         </li>
-        <li class="categories-item">
-          <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-watch.svg" width="56" height="98" alt="Умные часы">
-          </a>
+        <li class="categories-item watch">
           <a class="categories-item-title" href="#">
             <h3>Умные часы</h3>
           </a>
         </li>
-        <li class="categories-item">
-          <a class="categories-item-image" href="#">
-            <img src="images/categories/category-item-quadcopter.svg" width="132" height="69" alt="Квадракоптеры">
-          </a>
+        <li class="categories-item quadcopter">
           <a class="categories-item-title" href="#">
             <h3>Квадракоптеры</h3>
           </a>
@@ -395,7 +376,7 @@
         </div>
         <div class="subscription-form-container">
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="subscription-placeholder" type="email" name="user-email" placeholder="Ваш e-mail">
+            <input class="subscription-placeholder" type="text" name="user-email" placeholder="Ваш e-mail">
             <button class="subscription-button" type="submit">Подписаться</button>
           </form>
           <span class="subscription-span">Это бесплатно</span>
@@ -490,7 +471,7 @@
     <div class="modal modal-delivery">
       <section class="modal-header">
         <h2 class="modal-title">Доставка под заказ</h2>
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"
@@ -545,10 +526,14 @@
             </span>
           </span>
           <div class="number">
-            <button class="number-minus" type="button"></button>
+            <button class="number-minus" type="button">
+              <span class="visually-hidden">Уменьшить количество на единицу</span>
+            </button>
             <input class="field field-number" type="number" step="1" min="1" id="modal-delivery-number"
-              name="modal-delivery-number" value="1" required>
-            <button class="number-plus" type="button"></button>
+              name="modal-delivery-number" value="1">
+            <button class="number-plus" type="button">
+              <span class="visually-hidden">Добавить количество на единицу</span>
+            </button>
           </div>
         </div>
         <button class="button modal-delivery-button" type="submit">Отправить</button>

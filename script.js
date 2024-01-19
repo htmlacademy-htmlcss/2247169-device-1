@@ -19,11 +19,31 @@ capabilitiesInformaion.addEventListener('click', function (e) {
     }
 });
 
+// Subscription form
+const subscriptionForm = document.querySelector('.subscription-form');
+const subscriptionFormInput = subscriptionForm.querySelector('.subscription-placeholder');
+
+subscriptionForm.addEventListener('submit', function (e) {
+    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (!subscriptionFormInput.value.match(validRegex)) {
+        subscriptionFormInput.classList.add('subscription-error');
+        e.preventDefault();
+    } else {
+        subscriptionFormInput.classList.remove('subscription-error');
+    }
+});
+
+document.addEventListener('click', function (e) {
+    subscriptionFormInput.classList.remove('subscription-error');
+});
+
 // Modal window
 // Show modal window (delivery)
 const deliveryButton = document.querySelector('.delivery-button');
 const modalContainer = document.querySelector('.modal-container');
 const modalCloseButton = document.querySelector('.modal-close-button');
+const fields = document.querySelectorAll('.field');
 
 deliveryButton.addEventListener('click', function () {
     modalContainer.classList.add('modal-container-show');
@@ -31,6 +51,12 @@ deliveryButton.addEventListener('click', function () {
 
 modalCloseButton.addEventListener('click', function () {
     modalContainer.classList.remove('modal-container-show');
+    for (let i = 0; i < fields.length; i++) {
+        fields[i].parentElement.classList.remove('error');
+        fields[i].value = '';
+        fields[i].nextElementSibling.innerHTML = '';
+        numberField.value = '1';
+    }
 })
 
 // Check of correct inputs on forms
@@ -38,11 +64,10 @@ const modalDeliveryForm = document.querySelector('.modal-delivery-form');
 const fieldGroup = modalDeliveryForm.querySelector('.field-group');
 const nameField = modalDeliveryForm.querySelector('.field-name');
 const emailField = modalDeliveryForm.querySelector('.field-email');
+const numberField = modalDeliveryForm.querySelector('.field-number');
 const errorText = document.querySelector('.error-text');
-const fields = document.querySelectorAll('.field');
 
 modalDeliveryForm.addEventListener('submit', function (e) {
-    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     for (let i = 0; i < fields.length; i++) {
         if (!fields[i].value) {
@@ -52,20 +77,29 @@ modalDeliveryForm.addEventListener('submit', function (e) {
             }
             e.preventDefault();
         } else {
-            emailField.parentElement.classList.remove('error');
-            emailField.nextElementSibling.innerHTML = '';
+            fields[i].parentElement.classList.remove('error');
+            fields[i].nextElementSibling.innerHTML = '';
         }
     }
+
+    checkValidEmail();
+
+});
+
+function checkValidEmail() {
+    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     if (!emailField.value.match(validRegex)) {
         emailField.parentElement.classList.add('error');
         emailField.nextElementSibling.innerHTML = 'Забавный у вас адрес';
         e.preventDefault();
-    } else {
+    }
+     else {
         emailField.parentElement.classList.remove('error');
         emailField.nextElementSibling.innerHTML = '';
     }
-});
+
+}
 
 //Count in input
 const minusButton = document.querySelector('.number-minus');
